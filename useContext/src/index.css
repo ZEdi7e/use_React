@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.input_elem {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.todo_card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.todo_card:hover {
+    transform: translateY(-5px);
+}
+
+.todo_card h2 {
+    margin: 0;
+}
+
+.todo_card.completed {
+    background-color: #28a745;
+    color: white;
+    text-decoration: line-through;
+}
+
+.todo_card.pending {
+    background-color: #dc3545;
+    color: white;
+}
